@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>JPG to PDF 변환기</title>
+</head>
+<body>
+    <div class="container">
+        <h1>JPG to PDF 변환기</h1>
+        <form id="upload-form" action="/convert" method="post" enctype="multipart/form-data">
+            <label for="image-upload">JPG 파일 선택:</label>
+            <input type="file" id="image-upload" name="images" accept=".jpg, .jpeg" multiple required>
+            <button type="submit">PDF로 변환</button>
+        </form>
+        <div id="download-section" style="display: none;">
+            <p>PDF 변환이 완료되었습니다!</p>
+            <a id="download-link" href="#" download>PDF 다운로드</a>
+        </div>
+    </div>
+</body>
+</html>
