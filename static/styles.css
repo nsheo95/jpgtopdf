@@ -1,0 +1,95 @@
+/* 배경 이미지와 전체 폰트 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1587131926034-8f4c52b6d7e2?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+}
+
+/* 흐릿한 배경 위에 뿌옇게 올라오는 컨테이너 */
+.container {
+    max-width: 500px;
+    margin: 80px auto;
+    padding: 40px 30px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* 제목 */
+.container h1 {
+    font-size: 26px;
+    margin-bottom: 30px;
+    color: #d86b9c;
+}
+
+/* 라벨 */
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* 파일 선택 input */
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fffdfd;
+    font-size: 14px;
+}
+
+/* 메인 버튼: 파스텔 핑크 */
+button {
+    background-color: #f78fb3;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e667a3;
+}
+
+/* 변환 완료 후 PDF 다운로드 구역 */
+#download-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fdeef4;
+    border: 1px solid #f5c6dc;
+    border-radius: 12px;
+}
+
+/* 다운로드 텍스트 */
+#download-section p {
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #b14674;
+}
+
+/* 다운로드 링크: 라벤더 색상 */
+#download-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b8a9f5;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#download-link:hover {
+    background-color: #9c88ff;
+}
